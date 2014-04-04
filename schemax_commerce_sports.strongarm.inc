@@ -105,7 +105,7 @@ function schemax_commerce_sports_strongarm() {
       'display' => array(
         'product:sku' => array(
           'default' => array(
-            'weight' => '4',
+            'weight' => '6',
             'visible' => FALSE,
           ),
           'teaser' => array(
@@ -115,8 +115,8 @@ function schemax_commerce_sports_strongarm() {
         ),
         'product:title' => array(
           'default' => array(
-            'weight' => '5',
-            'visible' => FALSE,
+            'weight' => '0',
+            'visible' => TRUE,
           ),
           'teaser' => array(
             'weight' => '5',
@@ -125,7 +125,7 @@ function schemax_commerce_sports_strongarm() {
         ),
         'product:status' => array(
           'default' => array(
-            'weight' => '6',
+            'weight' => '7',
             'visible' => FALSE,
           ),
           'teaser' => array(
@@ -135,7 +135,7 @@ function schemax_commerce_sports_strongarm() {
         ),
         'product:commerce_price' => array(
           'default' => array(
-            'weight' => '2',
+            'weight' => '3',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -145,7 +145,7 @@ function schemax_commerce_sports_strongarm() {
         ),
         'product:field_image' => array(
           'default' => array(
-            'weight' => '0',
+            'weight' => '1',
             'visible' => TRUE,
           ),
           'teaser' => array(

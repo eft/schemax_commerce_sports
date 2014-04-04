@@ -340,7 +340,7 @@ function schemax_commerce_sports_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'featured_content' => array(
         'label' => 'above',
@@ -388,7 +388,7 @@ function schemax_commerce_sports_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'featured_content' => array(
         'label' => 'above',
@@ -438,7 +438,7 @@ function schemax_commerce_sports_field_default_field_instances() {
           'show_single_product_attributes' => FALSE,
         ),
         'type' => 'commerce_cart_add_to_cart_form',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'featured_content' => array(
         'label' => 'above',
