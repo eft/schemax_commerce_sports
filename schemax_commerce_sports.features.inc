@@ -30,6 +30,13 @@ function schemax_commerce_sports_ctools_plugin_api($module = NULL, $api = NULL) 
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function schemax_commerce_sports_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function schemax_commerce_sports_node_info() {
