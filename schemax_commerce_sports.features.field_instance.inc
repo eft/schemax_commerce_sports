@@ -346,7 +346,7 @@ function schemax_commerce_sports_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -394,7 +394,7 @@ function schemax_commerce_sports_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -441,10 +441,17 @@ function schemax_commerce_sports_field_default_field_instances() {
         'weight' => 4,
       ),
       'featured_content' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'commerce_cart',
+        'settings' => array(
+          'combine' => TRUE,
+          'default_quantity' => 1,
+          'line_item_type' => 'product',
+          'show_quantity' => FALSE,
+          'show_single_product_attributes' => FALSE,
+        ),
+        'type' => 'commerce_cart_add_to_cart_form',
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -486,13 +493,63 @@ function schemax_commerce_sports_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-schemax_product_display-field_schemax_promotion'
+  $field_instances['node-schemax_product_display-field_schemax_promotion'] = array(
+    'bundle' => 'schemax_product_display',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'If you fill in this field the product will be promoted to the store front.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 6,
+      ),
+      'featured_content' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_schemax_promotion',
+    'label' => 'Promotion',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 34,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
   t('Catalog Category');
+  t('If you fill in this field the product will be promoted to the store front.');
   t('Image');
   t('Price');
   t('Product');
+  t('Promotion');
 
   return $field_instances;
 }

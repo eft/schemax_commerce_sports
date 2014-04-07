@@ -112,6 +112,10 @@ function schemax_commerce_sports_strongarm() {
             'weight' => '4',
             'visible' => FALSE,
           ),
+          'featured_content' => array(
+            'weight' => '4',
+            'visible' => FALSE,
+          ),
         ),
         'product:title' => array(
           'default' => array(
@@ -119,6 +123,10 @@ function schemax_commerce_sports_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
+            'weight' => '5',
+            'visible' => FALSE,
+          ),
+          'featured_content' => array(
             'weight' => '5',
             'visible' => FALSE,
           ),
@@ -132,6 +140,10 @@ function schemax_commerce_sports_strongarm() {
             'weight' => '7',
             'visible' => FALSE,
           ),
+          'featured_content' => array(
+            'weight' => '8',
+            'visible' => FALSE,
+          ),
         ),
         'product:commerce_price' => array(
           'default' => array(
@@ -142,6 +154,10 @@ function schemax_commerce_sports_strongarm() {
             'weight' => '2',
             'visible' => TRUE,
           ),
+          'featured_content' => array(
+            'weight' => '3',
+            'visible' => FALSE,
+          ),
         ),
         'product:field_image' => array(
           'default' => array(
@@ -150,6 +166,10 @@ function schemax_commerce_sports_strongarm() {
           ),
           'teaser' => array(
             'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'featured_content' => array(
+            'weight' => '2',
             'visible' => TRUE,
           ),
         ),
